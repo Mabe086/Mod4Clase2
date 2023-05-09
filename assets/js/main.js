@@ -16,6 +16,17 @@ class Equipo {
 }
 
 
-const equipo1 = new Equipo("88888", "Microsoft", "MT001")
+class Teclado extends Equipo {
+    constructor(serial, marca, modelo, tipo, idioma) {
+        super(serial, marca, modelo)
+        this.tipo = tipo
+        this.idioma = idioma
+    }
+}
 
+const equipo1 = new Equipo("88888", "Microsoft", "MT001")
 console.log(equipo1);
+
+
+const teclado1 = new Teclado("99998877", "Genius", "GEN009", "Inalambrico", "Español")
+console.log(teclado1);
